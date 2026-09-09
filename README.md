@@ -34,11 +34,9 @@ The program builds arbitrary layered stacks, evaluates orientation-resolved LDOS
 
 ## Screenshot
 
-A screenshot is not included by default. If you add one to `docs/`, you can place it here, for example:
-
-```markdown
-![2D-LDOS interface](docs/2d-ldos-gui.png)
-```
+<p align="center">
+  <img src="assets/screenshot.png" alt="2D-LDOS application screenshot" width="900">
+</p>
 
 ## Requirements
 
@@ -181,15 +179,21 @@ The validity of a calculation depends on the material model supplied by the user
 └── .gitignore
 ```
 
+
 ## Citation
 
-If you use 2D-LDOS in published work, please cite the software repository and, when available, the associated paper. The `CITATION.cff` file is included so GitHub can display a **Cite this repository** entry.
+If you use **2D-LDOS** in your research, please cite the following work, which presents the physical application and associated LDOS/Förster energy-transfer calculations underlying this project:
 
-Before the first public release, edit `CITATION.cff` to add the author name(s), repository URL, and DOI if one exists.
+> **Aditi Raman Moghe, Delphine Lagarde, Sotirios Papadopoulos, Etienne Lorchat, Luis E. Parra López, Loïc Moczko, Kenji Watanabe, Takashi Taniguchi, Michelangelo Romeo, Maxime Mauguet, Xavier Marie, Arnaud Gloppe, Cédric Robert, and Stéphane Berciaud**,
+> *“Sub-nm range momentum-dependent exciton transfer from a 2D semiconductor to graphene,”*
+> arXiv:2604.13445 (2026).
+> https://arxiv.org/abs/2604.13445
+
+If **2D-LDOS** contributes to calculations, figures, analysis, or results presented in a publication, please cite the work above and reference this GitHub repository where appropriate.
 
 ## License
 
-This repository is prepared with the MIT License. If you prefer a different license for the public release, replace `LICENSE` before publishing.
+This repository is prepared with the MIT License. 
 
 ## Status
 
