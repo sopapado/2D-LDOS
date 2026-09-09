@@ -1,0 +1,10 @@
+[project]
+name = "2d-ldos"
+version = "1.0.0"
+description = "Tkinter GUI for optical LDOS calculations in planar multilayer structures"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+]

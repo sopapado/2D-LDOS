@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "2D-LDOS"
+type: software
+version: 1.0.0
+date-released: 2026-09-09
+authors:
+  - name: "ADD AUTHOR NAME"
+repository-code: "ADD GITHUB REPOSITORY URL"
+license: MIT
+abstract: "A Python/Tkinter application for calculating orientation-resolved optical LDOS in planar multilayer structures."
