@@ -19,13 +19,13 @@ The program builds arbitrary layered stacks, evaluates orientation-resolved LDOS
 - Angular LDOS spectra
 - Vacuum-normalized in-plane wavevector
   $s = k_\parallel/k_0$
-- Display in either `s` or physical $\(k_\parallel\)$
+- Display in either `s` or physical $k_\parallel$
 - Energy sweeps
 - Layer-thickness sweeps
 - 2D energy–momentum and thickness–momentum LDOS maps
 - Interactive Matplotlib plot properties, including axis limits/scales and 2D-map color limits/normalization
 - Stack visualization and dipole-position display
-- Constant refractive index $n\$, constant dielectric function $\varepsilon\$, or tabulated material data
+- Constant refractive index $n$, constant dielectric function $\varepsilon$, or tabulated material data
 - Material files based on energy or wavelength
 - CSV export of LDOS spectra and sweep data
 - JSON save/load for calculation configurations
@@ -76,9 +76,9 @@ The application opens with a generic lossless demonstration stack:
 
 | Layer | Optical property | Thickness |
 |---|---:|---:|
-| Air | \(n=1.0\) | semi-infinite |
-| Dielectric dipole layer | \(n=1.5\) | 100 nm |
-| Substrate | \(n=2.0\) | semi-infinite |
+| Air | $n=1.0$ | semi-infinite |
+| Dielectric dipole layer | $n=1.5$ | 100 nm |
+| Substrate | $n=2.0$ | semi-infinite |
 
 The dipole is initially placed at the center of the dielectric layer. This default is intended as a simple demonstration rather than a model of a particular material system.
 
@@ -92,16 +92,16 @@ s = \frac{k_\parallel}{k_0},
 k_0=\frac{\omega}{c}.
 $$
 
-Therefore, \(s=1\) is the **vacuum light line**. The program can alternatively display the horizontal coordinate as \(k_\parallel\) in nm $^{-1}\$.
+Therefore, $s=1$ is the **vacuum light line**. The program can alternatively display the horizontal coordinate as $k_\parallel$ in nm$^{-1}$.
 
-For a dipole embedded in a dielectric of refractive index \(n_1\), the light line of the emitter medium occurs at \(s=n_1\), not necessarily at \(s=1\).
+For a dipole embedded in a dielectric of refractive index $n_1$, the light line of the emitter medium occurs at $s=n_1$, not necessarily at $s=1$.
 
 ## Basic workflow
 
 1. Build or edit the layer stack from top to bottom.
 2. Select the finite layer containing the dipole.
 3. Specify the dipole position as a fraction measured from the bottom of that layer.
-4. Choose the photon energy and the sampled \(s\) range.
+4. Choose the photon energy and the sampled $s$ range.
 5. Select horizontal or perpendicular dipole orientation.
 6. Calculate the angular LDOS spectrum.
 7. Use the **Energy sweep** or **Thickness sweep** tabs for parameter sweeps.
@@ -112,8 +112,8 @@ For a dipole embedded in a dielectric of refractive index \(n_1\), the light lin
 
 Each layer can use one of three material descriptions:
 
-- constant complex refractive index \(n+i\kappa\);
-- constant complex dielectric function \(\varepsilon\);
+- constant complex refractive index $n+i\kappa$;
+- constant complex dielectric function $\varepsilon$;
 - a tabulated material file.
 
 For tabulated data, the GUI allows column mapping and supports energy or wavelength as the independent variable. The current implementation evaluates the material at the tabulated energy point nearest to the requested calculation energy.
@@ -132,11 +132,11 @@ The program reports normalized horizontal and perpendicular LDOS and can export:
 
 ## Numerical considerations
 
-Planar LDOS integrands can contain sharp structure near light lines and resonances. Results should be checked for convergence with respect to the sampled \(s\) range and number of points.
+Planar LDOS integrands can contain sharp structure near light lines and resonances. Results should be checked for convergence with respect to the sampled $s$ range and number of points.
 
-In particular, a uniform grid can converge slowly near a lossless light line because \(k_z\) approaches zero. Increasing the sampling density and restricting the calculation range to the physically relevant region can substantially improve convergence.
+In particular, a uniform grid can converge slowly near a lossless light line because $k_z$ approaches zero. Increasing the sampling density and restricting the calculation range to the physically relevant region can substantially improve convergence.
 
-Very large in-plane wavevectors can also probe length scales where local, continuum optical material models are no longer adequate. The numerical calculation does not by itself establish the validity of a chosen dielectric model at arbitrarily large \(k_\parallel\).
+Very large in-plane wavevectors can also probe length scales where local, continuum optical material models are no longer adequate. The numerical calculation does not by itself establish the validity of a chosen dielectric model at arbitrarily large $k_\parallel$.
 
 ## Validation
 
@@ -144,7 +144,7 @@ The implementation has been checked against useful limiting cases of the planar 
 
 ### Homogeneous lossless medium
 
-For a dipole in a homogeneous, nonmagnetic, lossless dielectric with refractive index \(n\), both orientations converge numerically to
+For a dipole in a homogeneous, nonmagnetic, lossless dielectric with refractive index $n$, both orientations converge numerically to
 
 $$
 \frac{\rho}{\rho_0} = n
