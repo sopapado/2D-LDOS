@@ -18,13 +18,11 @@ The program builds arbitrary layered stacks, evaluates orientation-resolved LDOS
 - Horizontal and perpendicular electric-dipole orientations
 - Angular LDOS spectra
 - Vacuum-normalized in-plane wavevector
-  $	
-  s = k_\parallel/k_0
-  $
-- Display in either `s` or physical \(k_\parallel\)
+  $s = k_\parallel/k_0$
+- Display in either `s` or physical $\(k_\parallel\)$
 - Energy sweeps
 - Layer-thickness sweeps
-- 2D energy–\(k\) and thickness–\(k\) LDOS maps
+- 2D energy–$(k\)$ and thickness–\(k\) LDOS maps
 - Interactive Matplotlib plot properties, including axis limits/scales and 2D-map color limits/normalization
 - Stack visualization and dipole-position display
 - Constant refractive index \(n\), constant dielectric function \(\varepsilon\), or tabulated material data
