@@ -88,11 +88,11 @@ The dipole is initially placed at the center of the dielectric layer. This defau
 
 The user-facing angular coordinate is
 
-\[
+$$
 s = \frac{k_\parallel}{k_0},
 \qquad
 k_0=\frac{\omega}{c}.
-\]
+$$
 
 Therefore, \(s=1\) is the **vacuum light line**. The program can alternatively display the horizontal coordinate as \(k_\parallel\) in nm\(^{-1}\).
 
