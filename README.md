@@ -92,7 +92,7 @@ s = \frac{k_\parallel}{k_0},
 k_0=\frac{\omega}{c}.
 $$
 
-Therefore, $s=1$ is the **vacuum light line**. The program can alternatively display the horizontal coordinate as $k_\parallel$ in nm$^{-1}$.
+Therefore, $s=1$ is the **vacuum light line**. The program can alternatively display the horizontal coordinate as $k_\parallel$ in nm⁻¹.
 
 For a dipole embedded in a dielectric of refractive index $n_1$, the light line of the emitter medium occurs at $s=n_1$, not necessarily at $s=1$.
 
