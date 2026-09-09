@@ -22,10 +22,10 @@ The program builds arbitrary layered stacks, evaluates orientation-resolved LDOS
 - Display in either `s` or physical $\(k_\parallel\)$
 - Energy sweeps
 - Layer-thickness sweeps
-- 2D energy–$(k\)$ and thickness–\(k\) LDOS maps
+- 2D energy–momentum and thickness–momentum LDOS maps
 - Interactive Matplotlib plot properties, including axis limits/scales and 2D-map color limits/normalization
 - Stack visualization and dipole-position display
-- Constant refractive index \(n\), constant dielectric function \(\varepsilon\), or tabulated material data
+- Constant refractive index $n\$, constant dielectric function $\varepsilon\$, or tabulated material data
 - Material files based on energy or wavelength
 - CSV export of LDOS spectra and sweep data
 - JSON save/load for calculation configurations
