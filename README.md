@@ -18,9 +18,9 @@ The program builds arbitrary layered stacks, evaluates orientation-resolved LDOS
 - Horizontal and perpendicular electric-dipole orientations
 - Angular LDOS spectra
 - Vacuum-normalized in-plane wavevector
-  \[
+  $$
   s = k_\parallel/k_0
-  \]
+  $$
 - Display in either `s` or physical \(k_\parallel\)
 - Energy sweeps
 - Layer-thickness sweeps
