@@ -1,5 +1,13 @@
 # 2D-LDOS
+<p align="center">
+  <img src="assets/logo.png" alt="2D-LDOS logo" width="220">
+</p>
 
+<h1 align="center">2D-LDOS</h1>
+
+<p align="center">
+  Optical local density of states in planar multilayer structures
+</p>
 **2D-LDOS** is a standalone Python/Tkinter application for calculating the optical local density of states (LDOS) of electric dipoles embedded in planar multilayer structures.
 
 The program builds arbitrary layered stacks, evaluates orientation-resolved LDOS angular spectra using generalized Fresnel reflection coefficients, and provides energy- and thickness-dependent sweeps. Sweep results can also be visualized as two-dimensional LDOS maps in energy/thickness versus in-plane wavevector.
