@@ -148,9 +148,9 @@ The implementation has been checked against useful limiting cases of the planar 
 
 For a dipole in a homogeneous, nonmagnetic, lossless dielectric with refractive index \(n\), both orientations converge numerically to
 
-\[
-\frac{\rho}{\rho_0}=n
-\]
+$$
+\frac{\rho}{\rho_0} = n
+$$
 
 when the angular integral is sufficiently well resolved.
 
